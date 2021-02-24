@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "predeploy": "yarn run build",
+    "deploy": "yarn run build &&gh-pages -d build"
   },
   "dependencies": {
     "path": "^0.12.7",
@@ -24,5 +27,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://localhost:3000",
+  "homepage": "https://bepyan.github.io/my-react",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
   }
 }
