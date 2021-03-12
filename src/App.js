@@ -11,9 +11,9 @@ const App = () => {
         <Router>
             <Header />
             <Switch>
-                <Route exact path='/' component={home}/>
-                <Route path='/useInput' component={useInput}/>
-                <Route exact path='/useAxios' component={useAxios}/>
+                <Route exact path='/' component={home} />
+                <Route path='/useInput' component={useInput} />
+                <Route exact path='/useAxios' component={useAxios} />
             </Switch>
         </Router>
     );

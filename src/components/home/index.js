@@ -2,7 +2,7 @@ import React from 'react'
 
 export default () => {
     return (
-        <div style={{textAlign: "center"}}>
+        <div style={{ textAlign: "center" }}>
             <p>let's leran about React Hook!</p>
             <br />
             <h4>Reference From</h4>

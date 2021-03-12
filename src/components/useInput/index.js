@@ -6,9 +6,11 @@ export default () => {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <input {...textHook} placeholder="what your name" />
+      <input {...textHook} placeholder="your text" style={{ fontSize: "40px", textAlign: "center" }} />
       <br />
-      <p>{textHook.value}</p>
+      <p style={{ color: "#262835", fontSize: "30px" }}>
+        {textHook.value}
+      </p>
     </div>
   );
 };

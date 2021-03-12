@@ -6,15 +6,15 @@ const Header = () => {
     const onLogo = () => window.location.href = '/'
 
     return (
-        <div style={{textAlign: "center", paddingBottom: "2rem"}}>
-            <h1 onClick={onLogo} style={{cursor: "pointer"}}>
+        <div style={{ textAlign: "center", paddingBottom: "2rem" }}>
+            <h1 onClick={onLogo} style={{ cursor: "pointer" }}>
                 Hook Master
             </h1>
-            
+
             {
-                hookList.map(item => 
-                    <a href={`/${item}`} key={item} style={{margin: '0.5rem'}}> 
-                        {item} 
+                hookList.map(item =>
+                    <a href={`/${item}`} key={item} style={{ margin: '0.5rem' }}>
+                        {item}
                     </a>)
             }
 
