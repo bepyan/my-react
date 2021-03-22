@@ -5,16 +5,24 @@ const Header = ({ hookList }) => {
     const onLogo = () => window.location.href = '/'
 
     return (
+<<<<<<< HEAD
         <Wrapper>
             <Title onClick={onLogo}>
                 Hook Master
             </Title>
             <br/>
 
+=======
+        <div style={{textAlign: "center", paddingBottom: "2rem"}}>
+            <h1 onClick={onLogo} style={{cursor: "pointer"}}>
+                Hook Master
+            </h1>
+            
+>>>>>>> 3f500653866facbfcf25fbcca56bd52916f9fa69
             {
-                hookList.map(item =>
-                    <a href={`/${item}`} key={item} style={{ margin: '0.5rem' }}>
-                        {item}
+                hookList.map(item => 
+                    <a href={`/${item}`} key={item} style={{margin: '0.5rem'}}> 
+                        {item} 
                     </a>)
             }
             
