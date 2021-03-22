@@ -1,9 +1,9 @@
 import React from 'react'
 
-function TmpList() {
+const TmpList = () => {
     return (
         <div>
-            tmp list
+            Tmp list
         </div>
     )
 }
