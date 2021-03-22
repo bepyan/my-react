@@ -1,15 +1,15 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Header = () => {
-    const hookList = ["useInput", "useAxios"];
-
+const Header = ({ hookList }) => {
     const onLogo = () => window.location.href = '/'
 
     return (
-        <div style={{ textAlign: "center", paddingBottom: "2rem" }}>
-            <h1 onClick={onLogo} style={{ cursor: "pointer" }}>
+        <Wrapper>
+            <Title onClick={onLogo}>
                 Hook Master
-            </h1>
+            </Title>
+            <br/>
 
             {
                 hookList.map(item =>
@@ -17,9 +17,20 @@ const Header = () => {
                         {item}
                     </a>)
             }
-
-        </div>
+            
+        </Wrapper>
     )
 }
+const Wrapper = styled.div`
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+`
+const Title = styled.h1`
+    display: inline;
+    cursor: pointer;
+    font-size: 60px;
+    margin-bottom: 0.5rem;
+    font-family: 'Do Hyeon', sans-serif;
+`
 
 export default Header;

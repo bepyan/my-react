@@ -5,7 +5,7 @@ export default () => {
     const { loading, err, data, refetch } = useAxios({ url: "http://aws.random.cat/meow" })
 
     return <div style={{ textAlign: "center" }}>
-        <h4>Cat from AWS</h4>
+        <p>Cat from AWS</p>
         <button onClick={refetch} >Get</button>
         <br/>
         <br/>
